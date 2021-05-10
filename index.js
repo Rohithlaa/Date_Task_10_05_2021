@@ -1,18 +1,17 @@
-
 // Creating required elements
 
 var container = document.createElement('div')
 container.setAttribute('class','container')
 container.style.textAlign ='center'
 
-
+// Creating Date elements
 var date = document.createElement('input')
 date.type = "date"
 date.setAttribute('id', 'date_input')
 date.style.width="400px"
 date.style.display = "inline"
 date.style.marginTop = "30px"
-
+//Creating Display Button
 var button = document.createElement('button')
 button.type = "button"
 button.classList.add('btn', 'btn-primary')
@@ -25,15 +24,7 @@ button.style.marginLeft = "5px"
 var displaydata = document.createElement('div')
 
 container.append(date,button,displaydata)
-
-
-
-
-
 document.body.append(container)
-
-
-
 // Getting data from INPUT Date
 function foo(){
     var res = document.getElementById('date_input').value
@@ -63,22 +54,16 @@ function foo(){
     else{
         displaydata.innerHTML = alert("Please Enter valid Date And Try Again")
     }
-    
-
-
-
 }
 
 var cal = (value1,value2)=>{
     return Math.floor(value1/value2)
 }
-
 var yeardiff = (value1,value2)=>{
     var d1 = new Date(value1)
     var d2 = new Date(value2)
     return d1.getFullYear() - d2.getFullYear()
 }
-
 var monthdiff = (value1,value2)=>{
     var year = yeardiff(value1,value2)
     var month = (year*12)+(value1.getMonth() - value2.getMonth())
