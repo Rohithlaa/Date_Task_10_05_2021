@@ -42,13 +42,13 @@ function foo(){
         var year = yeardiff(current_date,input_date)
         var month = monthdiff(current_date,input_date)
         displaydata.innerHTML = `Given date is ${input_date} <br>                       
-        Year: ${year} <br>
-        Month: ${month} <br>
-        Day: ${day} <br>
-        Hours: ${hours} <br>
-        Minutes: ${min} <br>
-        Seconds:${sec} <br>
-        MilliSeconds: ${millisec}
+        Year_DIFF: ${year} <br>
+        Month_DIFF: ${month} <br>
+        Day_DIFF: ${day} <br>
+        Hours_DIFF: ${hours} <br>
+        Minutes_DIFF: ${min} <br>
+        Seconds_DIFF:${sec} <br>
+        MilliSeconds_DIFF: ${millisec}
         `
     }
     else{
